@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        google()        // Ensure this line is present
+        mavenCentral()  // Also add this if missing
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2' // Update as per your version
+        classpath 'com.google.gms:google-services:4.4.2' // Add this line
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

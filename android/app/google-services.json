@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "19635705741",
+    "project_id": "stayawake-5dbd6",
+    "storage_bucket": "stayawake-5dbd6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19635705741:android:1f57513a9d5bde5ce9cfc4",
+        "android_client_info": {
+          "package_name": "com.example.stayawake"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABBZUZaOJtGs2WsZ6vqgn1P2GW-9Mc01w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
